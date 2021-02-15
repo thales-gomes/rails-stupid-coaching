@@ -1,0 +1,20 @@
+
+
+<blockquote>
+  <p>
+    <% if @question.blank? %>
+      Nothing to comment...
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+</blockquote>
+
+
+<h3><%= link_to 'Ask another question!', ask_path %></h3>
